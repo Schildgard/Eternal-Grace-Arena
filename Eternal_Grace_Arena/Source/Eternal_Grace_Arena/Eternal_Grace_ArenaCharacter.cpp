@@ -14,8 +14,6 @@
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "I_Targetable.h"
-#include "AbilitySystemComponent.h"
-#include "BasicAttributesSet.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -60,8 +58,6 @@ AEternal_Grace_ArenaCharacter::AEternal_Grace_ArenaCharacter()
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 
 	LockedOnTarget = nullptr;
-
-	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent>(TEXT("AbilitySystemComponent"));
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -130,11 +126,6 @@ void AEternal_Grace_ArenaCharacter::BeginPlay()
 	Super::BeginPlay();
 	world = GetWorld();
 	InitializeAnimationInstance();
-
-	if(IsValid(AbilitySystemComponent))
-	{
-		BasicAttributeSet = AbilitySystemComponent->GetSet<UBasicAttributesSet>();
-	}
 
 }
 

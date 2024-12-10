@@ -46,12 +46,6 @@
     <ClCompile Include="..\..\Source\Eternal_Grace_Arena\AnimNotify_PlaySound_RandomPitch.h">
       <Filter>Source\Eternal_Grace_Arena</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Eternal_Grace_Arena\BasicAttributesSet.cpp">
-      <Filter>Source\Eternal_Grace_Arena</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Source\Eternal_Grace_Arena\BasicAttributesSet.h">
-      <Filter>Source\Eternal_Grace_Arena</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Eternal_Grace_Arena\CharacterAnimInstance.cpp">
       <Filter>Source\Eternal_Grace_Arena</Filter>
     </ClCompile>
